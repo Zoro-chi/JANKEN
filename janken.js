@@ -11,14 +11,6 @@ function computerPlays() {
 return comp;
 }
 
-
-// let playerMove = prompt("Please choose between rock, paper or scissors: ").toLowerCase()
-
-
-// if( (playerMove !== "rock") && (playerMove !== "paper") && (playerMove !== "scissors")) {
-//     alert("Wrong input")
-// }
-
 function playRound(playerSelection, computerSelection) {
     let answer;
     if (playerSelection == computerSelection) {
@@ -39,3 +31,10 @@ function playRound(playerSelection, computerSelection) {
 return answer;
 }
 
+const rock = document.quertSelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
+
+rock.addEventListener("click", playRound)
+paper.addEventListener("click", playRound)
+scissors.addEventListener("click", playRound)

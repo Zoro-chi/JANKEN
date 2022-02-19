@@ -1,10 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+
+/* GENERAL STYLING */
+
 * {
   box-sizing: border-box;
 }
-img {
-  height: 300px;
-  width: 300px;
+button {
+  height: 200px;
+  width: 200px;
+  border: 2px solid yellow;
 }
 section {
   display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  color: #fcc9b9;
+}
+
+/* CLICKED CLASS WITH TRANSITIONS */
+.clicked {
 }
