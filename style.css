@@ -6,9 +6,13 @@
   box-sizing: border-box;
 }
 button {
-  height: 200px;
-  width: 200px;
-  border: 2px solid yellow;
+  display: flex;
+  border: 3px solid greenyellow;
+}
+img {
+  border: 5px solid salmon;
+  height: 20rem;
+  margin: 1rem;
 }
 section {
   display: flex;
@@ -22,8 +26,38 @@ h1 {
   font-weight: 700;
   font-size: 100px;
   color: #fcc9b9;
+  position: relative;
+  min-width: 100%;
+  margin: 0;
 }
 
 /* CLICKED CLASS WITH TRANSITIONS */
-.clicked {
+
+#bgvid {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+#container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+button:active {
+  background-color: salmon;
+  box-shadow: 0 20px greenyellow;
+  transform: translateY(4px);
+  border-radius: 50px;
+}
+h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: greenyellow;
+  font-family: "Noto Sans JP" sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
 }
