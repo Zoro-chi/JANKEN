@@ -39,16 +39,3 @@ function playRound(playerSelection, computerSelection) {
 return answer;
 }
 
-
-function game() {
-    for (i = 0; i < 5; i++ ) {
-        let playerMove = prompt("Please choose between rock, paper or scissors: ").toLowerCase()
-
-        if( (playerMove !== "rock") && (playerMove !== "paper") && (playerMove !== "scissors")) {
-        alert("Wrong input")
-        }
-        console.log(playRound(playerMove, computerPlays()))
-    }
-}
-
-game();
