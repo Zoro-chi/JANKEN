@@ -1,4 +1,10 @@
 
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
+const result = document.querySelector("#result");
+
+
 function computerPlays() {
     let comp;
     if (Math.floor(Math.random() * 3) + 1 == 1) {
@@ -11,7 +17,23 @@ function computerPlays() {
 return comp;
 }
 
-function playRound(playerSelection, computerSelection) {
+function action(e) {
+    alert(e.target.id)
+    let action;
+    if (e.target.id == "rock") {
+        action = "rock"
+    } else if (e.target.id == "paper") {
+        action = "paper"
+    } else if (e.target.id == "scissors") {
+        action = "scissors"
+    }
+    return action
+}
+const section = document.querySelector("section")
+section.addEventListener("click", action)
+
+
+function playRound(playerSelection=action(), computerSelection=computerPlays()) {
     let answer;
     if (playerSelection == computerSelection) {
         answer = (`Computer choose ${computerSelection}. Its a Tie!`)
@@ -28,13 +50,16 @@ function playRound(playerSelection, computerSelection) {
     } else {
         answer = (`Computer choose ${computerSelection}. You loose!`)
     }
+    alert(playerSelection)
+    alert(computerSelection)
+    alert(answer);
+    result.innerText = answer;
 return answer;
 }
 
-const rock = document.quertSelector("#rock");
-const paper = document.querySelector("#paper");
-const scissors = document.querySelector("#scissors");
 
-rock.addEventListener("click", playRound)
-paper.addEventListener("click", playRound)
-scissors.addEventListener("click", playRound)
+
+
+
+section.addEventListener("click", playRound)
+

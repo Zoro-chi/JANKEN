@@ -9,9 +9,28 @@ button {
   display: flex;
   border: 3px solid greenyellow;
 }
-img {
+.buttonr {
+  background-image: url(./imgs/rock.png);
+  background-size: contain;
   border: 5px solid salmon;
   height: 20rem;
+  width: 20rem;
+  margin: 1rem;
+}
+.buttonp {
+  background-image: url(./imgs/paper.png);
+  background-size: contain;
+  border: 5px solid salmon;
+  height: 20rem;
+  width: 20rem;
+  margin: 1rem;
+}
+.buttons {
+  background-image: url(./imgs/scissors.png);
+  background-size: contain;
+  border: 5px solid salmon;
+  height: 20rem;
+  width: 20rem;
   margin: 1rem;
 }
 section {
